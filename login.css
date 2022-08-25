@@ -1,0 +1,96 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+#pBox{
+    width:33%;
+    height:auto;
+    margin:auto;
+    border: 0px solid red;
+}
+#pBox>img{
+    width:65px;
+    height:65px;
+    margin:30px 0px 10px 220px;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+    
+}
+#pBox>p+div{
+    width:466px;
+    height: 20px;
+    margin:auto;
+    margin-top:20px;
+    background-color: #2a75cf;
+    display: inline-flex; 
+    border-radius: 4px;
+    padding:13px 18px;
+    justify-content: center;
+    align-items: center;
+}
+#pBox>p+div>p{
+   color:white;
+}
+#pBox>p+div>img{
+    margin:0px 10px 0px 0px;
+    width:17px;
+}
+#pBox>p+div:hover{
+    background-color: #0D6CE3;
+    cursor: pointer;
+}
+#pBox>p+div+p{
+    font-size: 12px;
+    margin-top: 30px;
+}
+form{
+    width:100%;
+}
+input[type="text"],[type="password"],textarea{
+    width:95.7%;
+    padding:12px 10px;
+    margin: 10px 0px 30px 0px;
+    border-radius: 4px;
+    border: 0.2px solid rgb(59, 55, 55);
+
+}
+input[type="submit"]{
+    width:100%;
+    padding:12px 10px;
+    background-color: black;
+    color:white; 
+    font-size: 15px;
+    border-radius: 4px;
+}
+span{
+    color:#767676;
+    text-decoration: underline;
+    margin-left: 260px;
+}
+span:hover{
+    color:black;
+    cursor: pointer;
+}
+form+div{
+    border:1.5px solid #9e9b9b;
+    width:99.5%;
+    margin-top:40px;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+a{
+    color:#767676;
+}
+a:hover{
+    color:black;
+    cursor: pointer;
+}
+
+
+
