@@ -5,10 +5,15 @@ document.querySelector("form").addEventListener("submit",function(event){
  
  let email = document.querySelector("#dEmail").value;
  let pswd = document.querySelector("#dPSWD").value;
-
- if(email==getData.Email && pswd==getData.Password){
+ getData.map(function(el){
+    
+  if(email==el.Email && pswd==el.Password){
     window.location.href="index.html";
  }else{
-   alert("Invalid email or password");
+   document.querySelector(".alert").style.display="flex";
  }
+ })
+  document.querySelector("#close").addEventListener("click",function(){
+  document.querySelector(".alert").style.display="none";
+ })
 })

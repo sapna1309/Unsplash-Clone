@@ -1,0 +1,125 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+body{
+
+    width:100%;
+    border: 0px solid black;
+}
+#header{
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYwZh0luT2Lu5EfumOOhpcUbjBGb5EI0-8lPwUfgxaM0EKP9HgN2jvjYxtsOiGmgMr1K2iXNaM_byFirvma29sC_h8ysaAXlinYjIsKK3f-5FjcA5A5JXNfHgJWooKBP8OampdR23lOSizXowGUC223AIOCg5sEQ7LmJBUBAPsDLuYLL8eu12HlrKvcg/s16000/banner.png");
+    width:100%;
+    height:720px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 0px solid black;
+    margin-top: 0px;
+}
+#header>h1{
+    font-size: 50px;
+    font-weight:600;
+    color: white;
+    margin-left: 350px;
+    padding-top: 240px;
+}
+#header>p{
+    font-size:20px;
+     font-weight:110;
+    color: white;
+    border: 0px solid red;
+    width:30%;
+    line-height:30px;
+    margin-left: 350px;
+    margin-top: 20px;
+}
+ #sdiv2{
+    border:none;
+    background-color:white;
+    width: 53%;
+    height:50px;
+    margin:20px 0px 0px 350px;
+    display:inline-flex;
+    align-items: center;
+    border-radius:3px;
+}
+#sdiv2>input{
+    color:#8b919e;
+    font-size: 15px;
+    letter-spacing:1px;
+    margin-left:15px;
+    width:96%;
+    height:97%;
+    background-color:white ;
+    border:none;
+    outline:none;
+}
+#sdiv2>img{
+    width:20px;
+    margin-left:20px;
+    filter:opacity(50%);
+}
+#sdiv2>img:hover{
+    filter:opacity(100%);
+    cursor: pointer;
+}
+#sdiv2+p{
+    color:white;
+    font-size: 15px;
+    font-weight:normal;
+    margin-top: 15px;
+    letter-spacing: 1px;
+} 
+#bottom-text{
+    display:inline-flex;
+    height:100px;
+    width:97%;
+    margin:170px 0px 0px 20px;
+    justify-content: space-between;
+
+} 
+
+#bottom-img{
+    width:150px;
+    border:0px solid white;
+    height:28px;
+    margin-left: 1337px;
+    margin-bottom: -160px;
+}
+#bottom-text>p{
+    color:rgb(201, 197, 197);
+    font-size: 14px;
+    
+}
+#gallery{
+    width:85%;
+    display:flex;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
+    margin: auto;
+    margin-top: 45px;
+    border:0px solid purple;
+}
+#first{
+ display: flex;
+ flex-direction: column;
+ gap:25px;
+ width:32%;
+}
+#second{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    width:32%;
+}
+#third{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    width:32%;
+}
+#limage1{
+    height:300px;
+}
+#limage2{
+    height:253px;
+}
