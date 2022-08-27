@@ -58,7 +58,7 @@ body{
     margin-left: 25px;
     filter:opacity(50%);
 }
-#top-div>div>img:hover{
+#searchicon:hover{
     filter:opacity(100%);
     cursor: pointer;
 }
@@ -114,7 +114,7 @@ button:hover{
     margin-left: 10px;
 
 }
-.three-line:hover{
+#threeline:hover{
     filter:opacity(100%);
     cursor:pointer;
 }
@@ -128,7 +128,7 @@ button:hover{
 #suggetion{
     position: absolute;
     z-index:1;
-    top:54px;
+    top:52px;
     left:84px;
     width:52.5%;
     height:350px;
@@ -329,7 +329,7 @@ h2{
 
 }
 .container:hover .overlay{
-    opacity:0.3;
+    opacity:0.4;
 }   /*--------------------------------------------OVERLAY END-------------------------------------------- */
 #text-div{
     width:100%;
@@ -423,13 +423,13 @@ img{
     bottom: 0;
     opacity: 0;
     transition:opacity 0.1s ease-in-out;
-    background-color: rgb(35, 33, 33);
+    background-color: rgb(36, 36, 36);
     cursor: pointer;
     
 
 }
 .maindiv:hover .overlayer{
-    opacity:0.3;
+    opacity:0.6;
 }
 #limage1{
     height:377px;
@@ -437,4 +437,87 @@ img{
 #limage2{
     height:250px;
 }/*------------------------------------------GALLERY COMPLETED--------------------------------------------*/
- 
+
+.top-icons{
+    display:inline-flex;
+    margin-left:305px;
+}
+.likes{
+    width:45px;
+    height:35px;
+    padding:8px 13px;
+     display:flex;  
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.likes>img{
+    filter:opacity(50%);
+}
+.likes>img:hover{
+    filter:opacity(100%);
+}
+.pluse{
+    width:45px;
+    height:35px;
+     display:flex; 
+     padding:8px 13px; 
+    background-color: white;
+    margin-left:10px;
+    margin-top: 15px;
+    border-radius: 3px;
+     justify-content: center;
+    align-items: center; 
+}
+.pluse>img{
+    filter:opacity(50%);
+}
+.pluse>img:hover{
+    filter:opacity(100%);
+}
+ .bottom-icons{
+    display:inline-flex;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+    z-index:2;
+}
+.names{
+    display: inline-flex;
+    width:100%;
+}
+.names>img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-left: -38px;
+    filter:opacity(100%);
+    
+}
+.names>p{
+    font-size: 17px;
+    font-weight: bold;
+    color:white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.downloads{
+    width:70px;
+    height:35px;
+    padding:8px 15px;
+    display:flex; 
+    background-color: white;
+    margin-left:170px;
+    margin-top: 3px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center; 
+}
+.downloads>img{
+    filter:opacity(50%);
+}
+.downloads>img:hover{
+    filter:opacity(100%);
+}

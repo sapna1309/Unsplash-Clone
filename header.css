@@ -138,17 +138,115 @@ body{
     bottom: 0;
     opacity: 0;
     transition:opacity 0.1s ease-in-out;
-    background-color: rgb(35, 33, 33);
+    background-color: rgb(36, 36, 36);
     cursor: pointer;
-    
+    /* display: flex; */
 
 }
 .maindiv:hover .overlayer{
-    opacity:0.3;
-} */
+    opacity:0.5;
+} 
 #limage1{
     height:300px;
 }
 #limage2{
     height:253px;
+}
+/* .pbox{
+    height:100%;
+    width:100%;
+} */
+.top-icon{
+    display:inline-flex;
+    margin-left: 50px;
+}
+.like{
+    width:45px;
+    height:35px;
+     display:flex;  
+    background-color: white;
+    margin-left: 249px;
+    margin-top: 15px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.like>img{
+    width:20px;
+    height:20px;
+    padding:10px;
+    filter: opacity(60%);
+    
+}
+.like>img:hover{
+    filter:opacity(150%);
+}
+
+.plus{
+    width:45px;
+    height:35px;
+     display:flex;  
+    background-color: white;
+    margin-left:10px;
+    margin-top: 15px;
+    border-radius: 3px;
+     justify-content: center;
+    align-items: center; 
+}
+.plus>img{
+    width:20px;
+    height:20px;
+    padding:10px;
+    filter: opacity(60%);
+    
+}
+.plus>img:hover{
+    filter:opacity(150%);
+}
+
+.bottom-icon{
+    display:inline-flex;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+    z-index:2;
+}
+.name{
+    display: inline-flex;
+    width:100%;
+}
+.name>img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-left: -40px;
+    filter:opacity(100%);
+    
+}
+.name>p{
+    font-size: 17px;
+    font-weight: bold;
+    color:white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.download{
+    width:45px;
+    height:35px;
+      display:flex; 
+    background-color: white;
+    margin-left:190px;
+    margin-top: 3px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center; 
+}
+.download>img{
+    width:20px;
+    height:20px;
+     padding:15px; 
+    filter: opacity(60%);
+}
+.download>img:hover{
+    filter:opacity(150%);
 }

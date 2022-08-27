@@ -9,3 +9,14 @@ document.querySelector("input").addEventListener("click",function(){
        document.querySelector("#sdiv").style.backgroundColor="#EEEE"; 
     document.querySelector("#search-bar").style.backgroundColor="#EEEE"; 
    })
+   let count=0;
+   document.querySelector(".likes").addEventListener("click",function(event){
+    event.preventDefault();
+    count++;
+    if(count==1){
+        document.querySelector(".likes").style.backgroundColor="red";
+    }
+    if(count>1){
+        document.querySelector(".likes").style.backgroundColor="white";
+    }
+    })
