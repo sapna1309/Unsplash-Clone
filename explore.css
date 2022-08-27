@@ -9,11 +9,12 @@ body{
 }
 #nav{
     border:0px solid red;
-    height:auto;
+    height:50px;
     position:fixed;
     top:0px;
     width:100%;
     background-color: white;
+    z-index: 1;
 }
 #top-div{
     border:0px solid green;
@@ -21,7 +22,7 @@ body{
     display: flex;
     margin-top:8px;
 }
-#top-div>img{
+#top-div>a>img{
     margin-left: 20px;
     width:39px;
     height:39px;
@@ -52,7 +53,7 @@ body{
     border:none;
     outline:none;
 }
-#top-div>div>img{
+#searchicon{
     width:17px;
     margin-left: 25px;
     filter:opacity(50%);
@@ -107,8 +108,10 @@ button:hover{
     cursor: pointer;
     border-radius: 4px;
 }
-button+img{
-    filter: opacity(60%)
+#threeline{
+    filter: opacity(60%);
+    width:18px;
+    margin-left: 10px;
 
 }
 .three-line:hover{
@@ -121,6 +124,7 @@ button+img{
     font-weight: bold;
     color:#7A7F8C
 }
+/*--------------------------------------------INPUT POP UP STARTED----------------------------------------*/
 #suggetion{
     position: absolute;
     z-index:1;
@@ -230,27 +234,29 @@ button+img{
     margin-bottom: 10px;
     color:#7A7F8C;
     font-size: 18px;
-}
-#header{
+    /*----------------------------------------INPUT POP UP completed-------------------------------------*/
+}  /*--------------------------------------------HEADER STARTED-------------------------------------------*/
+ #header{
     width:86%;
     height:auto; 
-    border:1px solid red;
+    border:0px solid red;
     margin:auto;
 }
+
 #header>p{
-   margin-top:70px;  
+   margin-top:100px;  
    margin-bottom:24px;
 }
-h1{
+#header>h1{
     font-size: 46px;
     line-height: 55.2px;
     margin-left:-3px;
     margin-bottom: -50px;
 }
-h1+p{
+#header>h1+p{
     font-size: 18px;
     line-height: 28.8px;
-    border: 1px solid green;
+    border: 0px solid green;
     width:630px;
 }
 span{
@@ -265,13 +271,15 @@ h2{
   font-size: 28px;
   line-height: 33.6px;
   margin-top: 45px;
+  margin-left: -2px;
 }
+
 #head-child{
     width:100%;
-    height:350px;
+    height:auto;
     display: flex;
     margin-top: 30px;
-    border:1px solid grey;
+    border:0px solid grey;
     justify-content:space-between;
    
 }
@@ -284,8 +292,8 @@ h2{
   color:white;
   width:31.9%;
   height:210px;
-  border:1px solid blue;
-  border-radius: 10px;
+  border:0px solid blue;
+  border-radius:5px;
 }
 #head-child>div{
     background-image: url("https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=440&h=220&q=60");
@@ -296,21 +304,16 @@ h2{
 #head-child>div+div+div{
     background-image: url("https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&w=440&h=220&q=60");
 }
+/*---------------------------------------------OVERLAY START------------------------------------------------ */
 .container{
     width:31.9%;
     height:210px;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    /* position:absolute;
-    top:50%;
-    left:20%; */
-     transform: translate(0%,0%); 
-}
-img{
-    height: 100%;
-    width:100%;
-    border-radius: 10px;
+    border-radius:5px;
+    position:relative;
+    top:0px;
+    left:0;
+    transform: translate(-0%,-0%);
+    z-index: 0;
 }
 .overlay{
     position: absolute;
@@ -319,12 +322,119 @@ img{
     right: 0;
     bottom: 0;
     opacity: 0;
-    transition:opacity 0.4s ease-in-out;
-    background-color: black;
+    transition:opacity 0.1s ease-in-out;
+    background-color: rgb(30, 29, 29);
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 .container:hover .overlay{
-    opacity:0.4;
+    opacity:0.3;
+}   /*--------------------------------------------OVERLAY END-------------------------------------------- */
+#text-div{
+    width:100%;
+    height:40px;
+    margin: auto;
+    margin-top:10px;
+    border:0px solid orangered;
+    display: inline-flex;
+    align-items: center;
 }
+#text-div>p~p{
+   margin-left:100px;
+}
+#btn{
+    width:100%;
+    height:50px;
+    margin: auto;
+    margin-top:0px;
+    border:0px solid blue;
+    display: inline-flex;
+    align-items: center; 
+}
+#btn>div{
+    width:30%;
+    height:50px;
+    display: inline-flex;
+    border:0px solid rgb(10, 10, 8);
+    font-size: 14px;
+    color:#7A7F8C;
+    align-items:center;
+}
+#btn>div~div{
+    margin-left:53px;
+}
+#btn>div>div{
+    margin-right:10px;
+    background-color:#eaebed;
+    padding:5px 10px;
+}
+#btn>div>div:hover{
+    color:rgb(16, 15, 15);
+    background-color: #dbdce0;
+    cursor: pointer;
+}  /*----------------------------------------------HEADER COMPLETED-------------------------------------*/
+ /*------------------------------------------------GALLERY STARTED----------------------------------------*/
+ #gallery{
+    width:86%;
+    display:flex;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
+    margin: auto;
+    margin-top: 30px;
+    border:0px solid purple;
+}
+#first{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    width:32%;
+   }
+   #second{
+       display: flex;
+       flex-direction: column;
+       gap:25px;
+       width:32%;
+   }
+   #third{
+       display: flex;
+       flex-direction: column;
+       gap:25px;
+       width:32%;
+   }
+   .maindiv{
+    width:auto;
+    height:auto;
+    position:relative;
+    top:0px;
+    left:0;
+    transform: translate(-0%,-0%);
+    z-index: 0;
+}
+img{
+    width:100%;
+    height:100%;
+}
+.overlayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition:opacity 0.1s ease-in-out;
+    background-color: rgb(35, 33, 33);
+    cursor: pointer;
+    
+
+}
+.maindiv:hover .overlayer{
+    opacity:0.3;
+}
+#limage1{
+    height:377px;
+}
+#limage2{
+    height:250px;
+}/*------------------------------------------GALLERY COMPLETED--------------------------------------------*/
+ 

@@ -9,6 +9,7 @@ document.querySelector("form").addEventListener("submit",function(event){
     
   if(email==el.Email && pswd==el.Password){
     window.location.href="index.html";
+    document.querySelector(".alert").style.display="none";
  }else{
    document.querySelector(".alert").style.display="flex";
  }

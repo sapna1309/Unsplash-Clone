@@ -13,6 +13,7 @@ body{
     top:0px;
     width:100%;
     background-color: white;
+    z-index: 1;
 }
 #top-div{
     border:0px solid green;
@@ -51,7 +52,7 @@ body{
     border:none;
     outline:none;
 }
-#top-div>div>img{
+#top-div>div>div>img{
     width:17px;
     margin-left: 25px;
     filter:opacity(50%);
@@ -106,11 +107,13 @@ button:hover{
     cursor: pointer;
     border-radius: 4px;
 }
-button+img{
-    filter: opacity(60%)
+button+div>img{
+    filter: opacity(60%);
+    width:20px;
+    margin-left: 10px;
 
 }
-.three-line:hover{
+button+div>img:hover{
     filter:opacity(100%);
     cursor:pointer;
 }

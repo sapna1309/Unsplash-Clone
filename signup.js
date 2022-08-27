@@ -1,6 +1,6 @@
 document.querySelector("form").addEventListener("submit",addDetails);
 
-let dataArr = JSON.parse(localStorage.getItem("signup-data")) || [];
+let dataArr = JSON.parse(localStorage.getItem("signup-data"));
 function addDetails(event){
 event.preventDefault();
 
@@ -15,12 +15,12 @@ let dataObj = {
 dataArr.push(dataObj);
 
 localStorage.setItem("signup-data",JSON.stringify(dataArr));
-
-dataArr.map(function(el){
-    if(el.Password.length>=8){
+  
+ if(dataObj.Password.length>=8){
     window.location.href="index.html";
     }
+   else{
+    document.querySelector("#pswd").style.borderColor="red";
 
-})
-
+   }
 };

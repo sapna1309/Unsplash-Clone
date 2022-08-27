@@ -96,27 +96,56 @@ body{
     grid-template-columns: repeat(3,1fr);
     gap:25px;
     margin: auto;
-    margin-top: 45px;
+    margin-top: 30px;
     border:0px solid purple;
 }
 #first{
- display: flex;
- flex-direction: column;
- gap:25px;
- width:32%;
-}
-#second{
     display: flex;
     flex-direction: column;
     gap:25px;
     width:32%;
+   }
+   #second{
+       display: flex;
+       flex-direction: column;
+       gap:25px;
+       width:32%;
+   }
+   #third{
+       display: flex;
+       flex-direction: column;
+       gap:25px;
+       width:32%;
+   }
+    .maindiv{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:0px;
+    left:0;
+    transform: translate(-0%,-0%);
+    z-index: 0;
 }
-#third{
-    display: flex;
-    flex-direction: column;
-    gap:25px;
-    width:32%;
+  img{
+    width:100%;
+    height:100%;
+}  
+.overlayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition:opacity 0.1s ease-in-out;
+    background-color: rgb(35, 33, 33);
+    cursor: pointer;
+    
+
 }
+.maindiv:hover .overlayer{
+    opacity:0.3;
+} */
 #limage1{
     height:300px;
 }
