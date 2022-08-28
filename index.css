@@ -173,10 +173,14 @@ button:hover{
     display:inline-flex;
     align-items: center;
 }
+#two>div>img{
+    width:38px;
+    
+}
 #two>div>p{
  
- padding:0px 0px 0px 10px;
-  font-size: 15px; 
+ padding:0px 5px 0px 10px;
+  font-size: 14px; 
 }
 #two>div:hover{
     background-color: #f6f1f1;
@@ -218,9 +222,12 @@ button:hover{
     display:inline-flex;
     align-items: center;
 }
+#two+div>div>img{
+    width:38px;
+}
 #two+div>div>p{
     
-    padding:0px 0px 0px 10px;
+    padding:0px 5px 0px 10px;
     font-size: 15px; 
 }
 #two+div>div:hover{
