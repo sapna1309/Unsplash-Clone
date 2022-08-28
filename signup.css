@@ -1,0 +1,150 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+}
+#signup{
+    height:auto;
+    margin:auto;
+    display: flex;
+    border:0px solid red;
+}
+#img-div{
+  border: 0px solid blue;
+  width:40%;
+  height:710px;
+  background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1661158161271-a4a08053ef7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  position: sticky;
+  top:0px;
+}
+#img-div>img{
+    margin:40px 60px;
+}
+#img-div>h1{
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 150px;
+    letter-spacing: 0.5px;
+}
+#img-div>p{
+    color:white;
+    font-size: 22px;
+    border: 0px solid red;
+    width:70%;
+    margin:11px 0px 0px 70px;
+    line-height: 33px;
+    letter-spacing: 1px;
+}
+#img-div>h5{
+    border: 0px solid red;
+    margin: 225px 0px 0px 70px;
+    color:white;
+    letter-spacing:0.5px;   
+    font-size: 14px;
+    font-weight: lighter;
+}
+#form-div{
+    border: 0px solid green;
+    width:60%;
+    height:100%;
+    background-color:white;
+}
+#form-div>div{
+    border:0px solid green;
+    margin:auto;
+    width:55%;
+    height:100%;
+}
+#form-div>div>h1{
+    font-size: 46px;
+    text-align: center;
+    margin-top:50px;
+    word-spacing: 0px;
+}
+#form-div>div>P{
+    font-weight:300px;
+    font-size: 15;
+    text-align: center;
+    margin-top:22px;
+    
+}
+a{
+    color:#767676;
+}
+a:hover{
+    color:black;
+    cursor: pointer;
+
+}
+#form-div>div>div{
+    width:465px;
+    height: 20px;
+    margin:auto;
+    margin-top:50px;
+    background-color: #2a75cf;
+    display: inline-flex; 
+    border-radius: 4px;
+    padding:13px 18px;
+    justify-content: center;
+}
+#form-div>div>div:hover{
+    background-color: #0D6CE3;
+    cursor: pointer;
+}
+#form-div>div>div>p{
+    color:white;
+}
+#form-div>div>div>img{
+    margin:0px 10px 0px 0px;
+}
+#form-div>div>p{
+    font-size: 15px;
+    color:#767676;
+    margin: 30px 0px;
+}
+form{
+    width:100%;
+}
+#fn{
+    margin-right: 183px;
+}
+input[type="text"],[type="password"],textarea{
+    width:95.5%;
+    padding:12px 10px;
+    margin: 10px 0px 30px 0px;
+    border-radius: 4px;
+    border: 0.2px solid rgb(59, 55, 55);
+
+}
+#firstname{
+    width:43%;
+}
+#lastname{
+    width:43%;
+    margin-left:21px;
+}
+span{
+    color:#767676;
+}
+input[type="submit"]{
+    width:100%;
+    padding:12px 10px;
+    background-color: black;
+    color:white; 
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+form+p{
+    font-size:8px;
+    letter-spacing: -0.5px;
+    word-spacing: -0.5px;
+}
+.term{
+   text-decoration: underline; 
+}
+
